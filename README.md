@@ -1,2 +1,2 @@
 # rasterizeElement.js
-Expands the functionality of [rasterizeHTML.js](https://github.com/cburgmer/rasterizeHTML.js) to rasterize any specific element from DOM. Supports rasterization of SVG and Canvas.
+Expands the functionality of [rasterizeHTML.js](https://github.com/cchandurkar/rasterizeElement.js/blob/master) to rasterize the contents of specified element.
