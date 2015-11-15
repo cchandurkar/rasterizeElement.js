@@ -2,7 +2,7 @@
 Expands the functionality of [rasterizeHTML.js](https://github.com/cburgmer/rasterizeHTML.js) to rasterize the contents of specified element. It supports everything that is supported by `rasterizeHTML.js`. 
 
 ### Install:
-`$ npm install rasterizeelement` <br /><br />
+`$ npm install rasterizeelement.js` <br /><br />
 Then use it via `require('rasterizeelement')` or use browserify builds from `dist/rasterizeElement.js` or `dist/rasterizeElement.min.js` in `<script/>` tag.
 
 ### Example:
