@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>rasterizeElement. js | demos</title>
+    <link rel="stylesheet" href="style/responsive.css" media="screen" charset="utf-8">
+    <style>
+
+      body, html {
+        font-family: sans-serif, helvetica, courier;
+      }
+
+    </style>
+
+  </head>
+  <body>
+
+    <div class="section group">
+      <div class="col span_5_of_12">
+        <div id="content">
+          <h2>Flowers</h2>
+          <img src="assets/color-flower.jpg" title="Colorful Flowers"/>
+          <p>Flowers are the most beautiful creation of God. Their sight is a joy forever.
+            They are a subject of poetry and no Natural description is complete without reference to flowers.
+            Their beauty is sung by some of the best poets of the world</p>
+        </div>
+      </div>
+      <div class="col span_2_of_12">
+      	<button id="rasterize">Rasterize</button>
+      </div>
+      <div class="col span_5_of_12">
+      	<div id="rasterized-content">
+
+        </div>
+      </div>
+    </div>
+
+    <script src="../dist/rasterizeElement.js"></script>
+    <script type="text/javascript">
+      document.getElementById('rasterize').onclick = function(){
+        rasterizeElement.rasterize('#content', null, function(imgBase64){
+          var img = document.createElement("img");
+          img.src = imgBase64;
+          document.getElementById('rasterized-content').appendChild(img);
+        });
+      };
+    </script>
+
+  </body>
+</html>
