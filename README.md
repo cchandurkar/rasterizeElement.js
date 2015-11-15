@@ -1,5 +1,5 @@
 # rasterizeElement.js
-Expands the functionality of [rasterizeHTML.js](https://github.com/cchandurkar/rasterizeElement.js/blob/master) to rasterize the contents of specified element. It supports everything that is supported by `rasterizeHTML.js`. 
+Expands the functionality of [rasterizeHTML.js](https://github.com/cburgmer/rasterizeHTML.js) to rasterize the contents of specified element. It supports everything that is supported by `rasterizeHTML.js`. 
 
 ### Install:
 `$ npm install rasterizeelement` <br /><br />
