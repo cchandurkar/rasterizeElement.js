@@ -2,8 +2,8 @@
 Expands the functionality of [rasterizeHTML.js](https://github.com/cchandurkar/rasterizeElement.js/blob/master) to rasterize the contents of specified element. It supports everything that is supported by `rasterizeHTML.js`. 
 
 ### Install:
-`$ npm install rasterizeelement` 
-Then use it via `require('rasterizeelement')` or use browserify builds from `dist/rasterizeElement.js` or `dist/rasterizeElement.min.js`.
+`$ npm install rasterizeelement` <br /><br />
+Then use it via `require('rasterizeelement')` or use browserify builds from `dist/rasterizeElement.js` or `dist/rasterizeElement.min.js` in `<script/>` tag.
 
 ### Example:
 ```javascript
@@ -31,7 +31,8 @@ var options = {
 }
 ```
 
-
+### How it works?
+The drill here is pretty simple. An entire document is rasterized on temporary canvas using `rasterizeHTML`. Temporary canvas is then resized using specified element's height, width, left offset and top offset and converted into base64 encoding.
 
 ### Development:
 1. clone this repository
